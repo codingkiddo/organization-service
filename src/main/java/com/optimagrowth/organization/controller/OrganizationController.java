@@ -1,6 +1,5 @@
 package com.optimagrowth.organization.controller;
 
-import javax.annotation.security.RolesAllowed;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -15,6 +14,8 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.optimagrowth.organization.model.Organization;
 import com.optimagrowth.organization.service.OrganizationService;
+
+import jakarta.annotation.security.RolesAllowed;
 
 @RestController
 @RequestMapping(value="v1/organization")
